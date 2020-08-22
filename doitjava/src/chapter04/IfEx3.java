@@ -3,7 +3,7 @@ package chapter04;
 public class IfEx3 {
 
 	public static void main(String[] args) {
-		int score = 75;
+		int score = 72;
 
 		if (score >= 90) { // true면 {} 실행
 			System.out.println("점수가 90보다 크거나 같습니다.");
@@ -16,11 +16,14 @@ public class IfEx3 {
 			if (score >= 75) {
 				System.out.println("점수가 75보다 크거나 같습니다.");
 				System.out.println("등급은 C+입니다.");
+			} else if (score >= 72) {
+				System.out.println("점수가 72보다 크거나 같습니다.");
+				System.out.println("등급은 C입니다.");
 			} else {
 				System.out.println("점수가 70보다 크거나 같습니다.");
-				System.out.println("등급은 C입니다.");
-			}	// else if는 여러개 있어도 된다.
-		} else { 
+				System.out.println("등급은 D입니다.");
+			}
+		} else { // else if는 여러개 있어도 된다.
 			System.out.println("등급은 F입니다.");
 		} //위의 조건이 모두 해당되지 않을 때 실행, 생략 가능
 			//if 중첩은 3단계까지가 일반적
