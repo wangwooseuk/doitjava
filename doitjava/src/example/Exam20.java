@@ -8,7 +8,7 @@ public class Exam20 {
 		Scanner sc = new Scanner(System.in);
 		int line;
 		do {
-			System.out.print("몇 줄을 출력할까요(홀수만 입력): ");
+			System.out.print("몇 줄을 출력할까요?(홀수만 입력): ");
 			line = sc.nextInt();
 		} while (line % 2 == 0);
 		int upLine = line / 2;
@@ -31,10 +31,10 @@ public class Exam20 {
 			for (int i = downLine - 1; i >= 0; i--) {
 				for (int j = 0; j < downLine; j++) {
 					if (j < downLine - i - 1) {
-						System.out.println(" ");
+						System.out.print(" ");
 					} else {
 						if (j == downLine - i - 1) {
-							System.out.println("*");
+							System.out.print("*");
 						} else {
 							System.out.print(" ");
 						}
