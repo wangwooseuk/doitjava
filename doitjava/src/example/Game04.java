@@ -11,15 +11,22 @@ public class Game04 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 
-		int user = 0;
-		
+		int num = 0;
+		int cnt = 0;
 		System.out.print("숫자를 입력하세요: ");
-		
-		int com = (int) (Math.random() * 100) + 1;
-		user = sc.nextInt();
-		
-			
-		
 
+		num = sc.nextInt();
+
+		for (int i = 2; i < num; i++) {
+			for (int j = 1; j <= i; j++) {
+				if (i % j == 0) {
+					cnt++;
+				}
+			}
+			if (cnt == 2) {
+				System.out.println(i);
+			}
+			cnt = 0;
+		}
 	}
 }
