@@ -34,6 +34,7 @@ public class Game01 {
 				System.out.println("컴퓨터 승");
 				life--;
 				if(life == 0) {
+					System.out.println("라이프가 0이되어 게임을 종료합니다.");
 					break;
 				}
 			}
