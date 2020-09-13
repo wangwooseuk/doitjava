@@ -6,5 +6,12 @@ public class StudentEx {
 		System.out.println("name: " + student.name);
 		System.out.println("ssn: " + student.ssn);
 		System.out.println("studentNo: " + student.studentNo);
+
+		System.out.println();
+		
+		People people = new People("À¯Àç¼®", "2345-789");
+		
+		System.out.println(people.name);
+		System.out.println(people.ssn);
 	}
 }
