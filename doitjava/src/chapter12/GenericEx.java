@@ -18,5 +18,9 @@ public class GenericEx {
 		list2.add(Integer.valueOf("300"));		//¹®ÀÚ¿­
 		
 		System.out.println(list2);
+		
+		Integer it = new Integer("200");
+		int sum = it.valueOf("200") + 10;
+		System.out.println(sum);
 	}
 }
