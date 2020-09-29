@@ -14,7 +14,7 @@ public class ConsumerExample {
 		BiConsumer<String, String> bigConsumer = (t, u) -> System.out.println(t + u);
 		bigConsumer.accept("Java", "8");
 		
-		DoubleConsumer doubleConsumer = d -> System.out.println("Java" + "8");
+		DoubleConsumer doubleConsumer = d -> System.out.println("Java" + d);
 		doubleConsumer.accept(8.0);
 		
 		ObjIntConsumer<String> objIntConsumer = (t, i) -> System.out.println(t + i);
